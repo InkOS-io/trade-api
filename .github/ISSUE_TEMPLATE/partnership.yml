@@ -1,0 +1,40 @@
+name: Trade partnership inquiry
+description: Introduce your company and a trade printing workflow you would like to connect.
+title: "Partnership inquiry from "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This inquiry is public. Please omit credentials, private documentation, artwork, customer details, and account-specific prices. We can follow up here using your GitHub account.
+  - type: input
+    id: company
+    attributes:
+      label: Company name
+    validations:
+      required: true
+  - type: textarea
+    id: services
+    attributes:
+      label: What do you produce for other businesses?
+      placeholder: For example, short-run digital print, wide-format signs or trade finishing.
+    validations:
+      required: true
+  - type: textarea
+    id: order_workflow
+    attributes:
+      label: How do buying shops place orders with you today?
+      description: A brief description of your current tools or process is enough.
+    validations:
+      required: true
+  - type: textarea
+    id: first_connection
+    attributes:
+      label: Which step would you like to connect with InkOS first?
+      placeholder: For example, help buying shops request a quote or receive shipment updates.
+    validations:
+      required: true
+  - type: input
+    id: integration_docs
+    attributes:
+      label: Public integration documentation (optional)
+      description: Include only a publicly accessible documentation link you are authorized to share.
